@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" href="./icon/favicon.png" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <script
+      src="https://kit.fontawesome.com/c3a36ed362.js"
+      crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="responisive.css" />
+    <link rel="stylesheet" href="change.css" />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+  </head>
+  <body>
+    <video
+      autoplay
+      loop
+      muted
+      plays-inline
+      class="bg-clip"
+      src="videos/earth-line.mp4"
+      type="video/mp4"></video>
+    <div class="loader"></div>
+
+    <!-- Configuration Page -->
+    <div class="configration">
+      <h1>configration</h1>
+      <div class="con-cross" onclick="configHide()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <p>Colors</p>
+      <div class="color">
+        <a href="#" onclick="color1()"></a>
+        <a href="#" onclick="color2()"></a>
+        <a href="#" onclick="color3()"></a>
+        <a href="#" onclick="color4()"></a>
+        <a href="#" onclick="color5()"></a>
+        <a href="#" onclick="color6()"></a>
+        <a href="#" onclick="color7()"></a>
+        <a href="#" onclick="color8()"></a>
+      </div>
+      <p>Three Dimentional BackGrounds</p>
+      <div class="backgrounds">
+        <a onclick="changeVideo()">Earth Lines Sphere</a>
+        <a onclick="changeVideo2()">3D Abstract Ball</a>
+        <a onclick="changeVideo3()">Water Waves</a>
+        <a onclick="changeVideo4()">Liquids Wavy</a>
+        <a onclick="changeVideo5()">Solid Color</a>
+        <a onclick="changeVideo6()">Simple Strings</a>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <div class="sidebar">
+          <div class="sidebar-head">
+            <span class="icon-move">
+              <a href="#" onclick="configDisplay()">
+                <i class="fa-solid fa-gear"></i>
+              </a>
+            </span>
+            <div class="side-head">
+              <img src="logo.png" alt="" />
+              <span class="sidebar-text">Framer Designer <br />&Developer</span>
+            </div>
+          </div>
+          <div class="my-image">
+            <img src="me.jpg" alt="" />
+          </div>
+          <div class="email-section">
+            <ul>
+              <li>hello@drake.design</li>
+              <li>Base in Los Angeles, CA</li>
+            </ul>
+            <div class="copywrite">
+              <span>&copy;2022 Drake. All Rights Reserved</span>
+            </div>
+          </div>
+          <div class="side-icon">
+            <ul>
+              <li>
+                <a target="_blank" href="https://x-accounts.com/login"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+
+              <li>
+                <a href="https://www.google.com.pk/" target="_blank"
+                  ><i class="fa-brands fa-chrome"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="btn">
+            <button><i class="fa-regular fa-envelope"></i>Hire Me!</button>
+          </div>
+        </div>
+        <div class="main anim">
+          <div class="mian-work">
+            <div class="main-icon">
+              <i class="fa-solid fa-house-user">&nbsp;Intoduce</i>
+            </div>
+            <p class="info data-aos=fade-up">
+              Say Hi from
+              <span style="color: var(--primary_color)">Drake</span>,<br />
+              Framer Designer and<br />
+              Developer
+            </p>
+            <p class="work">
+              I design and code beautifully simple things and i love what i do.
+              <br />
+              Just simple like that!
+            </p>
+            <div class="photo-animate">
+              <a href="#" class="photo-move">
+                <img src="round-text.png" alt="" />
+                <i class="fa-solid fa-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Experince text -->
+          <section>
+            <div class="exp-section fade-up-right">
+              <div class="exp-num">
+                <span class="span-txt">10+</span>
+                <span class="year-txt">YEARS OF <br />EXPERIENCE</span>
+              </div>
+              <div class="exp-txt">
+                <span class="span-txt">182+</span>
+                <span class="year-txt"
+                  >PROJECTS COMPLETED ON <br />
+                  15 COUNTRIES</span
+                >
+              </div>
+            </div>
+          </section>
+
+          <!-- About Section -->
+
+          <div class="about-section" data-aos="fade-up">
+            <i
+              class="fa-solid fa-user"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              >&nbsp;About</i
+            >
+            <p class="about-info" data-aos="fade-up" data-aos-duration="1500">
+              Every great design begin with <br />
+              an even
+              <span style="color: var(--primary_color)">better story</span>
+            </p>
+            <p class="about-work" data-aos="fade-up" data-aos-duration="2000">
+              Since beginning my journey as a freelance designer nearly 8 years
+              ago, I've done remote work for agencies, consulted for startups,
+              and collaborated with talented people to create digital products
+              for both business and consumer use. I'm quietly confident,
+              naturally curious, and perpetually working on improving my
+              chopsone design problem at a time.
+            </p>
+          </div>
+
+          <!-- resume Section-->
+
+          <div class="resume-section">
+            <i
+              class="fa-solid fa-briefcase"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              >&nbsp;Resume</i
+            >
+            <p class="resume-info" data-aos="fade-up" data-aos-duration="1000">
+              Education &
+              <span style="color: var(--primary_color)">Experience</span>
+            </p>
+            <div class="present" data-aos="fade-left" data-aos-duration="1000">
+              <span
+                class="fa-solid fa-circle"
+                id="res-icon"
+                data-aos="fade-left"></span>
+              <ul class="resume-exp" data-aos="fade-left">
+                <li><span class="date">2020 - Present</span></li>
+                <li>
+                  Framer Desinger & Developer<br />
+                  <span class="exp-span">Brunodee Agency</span>
+                </li>
+
+                <li>
+                  Front-End WordPress Developer <br />
+                  <span class="exp-span"> Envato Market</span>
+                </li>
+              </ul>
+            </div>
+            <div class="recent" data-aos="fade-left" data-aos-duration="1500">
+              <span
+                class="fa-solid fa-circle"
+                id="res-icon"
+                data-aos="fade-left"></span>
+              <ul class="resume-exp" data-aos="fade-left">
+                <li><span class="date">2013 - 2019</span></li>
+                <li>
+                  Webflow Developer & Co-Founder<br />
+                  <span class="exp-span">Designflow Studio</span>
+                </li>
+
+                <li>
+                  Web Designer <br />
+                  <span class="exp-span"> Freelance</span>
+                </li>
+                <li>
+                  Leader Team of Marketing <br />
+                  <span class="exp-span"> AHA Marketing Agency </span>
+                </li>
+              </ul>
+            </div>
+            <div class="past" data-aos="fade-left" data-aos-duration="2000">
+              <span class="fa-solid fa-circle" id="res-icon"></span>
+              <ul class="resume-exp">
+                <li><span class="date">2010 - 2013</span></li>
+                <li>
+                  Bachelor Degree of Information Technology<br />
+                  <span class="exp-span">US RMIT University </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Services Section -->
+
+          <div class="service" data-aos="fade-up">
+            <div class="service-icon">
+              <i
+                class="fa-solid fa-bars-staggered"
+                data-aos="fade-up"
+                data-aos-duration="700"
+                >&nbsp;Services</i
+              >
+            </div>
+            <p class="resume-info" data-aos="fade-up" data-aos-duration="700">
+              My
+              <span style="color: var(--primary_color)">Specializations</span>
+            </p>
+            <div class="ser-section">
+              <div class="box1" data-aos="fade-up" data-aos-duration="1000">
+                <div class="network">
+                  <i class="fa-solid fa-network-wired"></i>
+                </div>
+                <ul>
+                  <li class="sep">Website Design</li>
+                  <span
+                    >I created digital products with unique ideas use Figma &
+                    Framer</span
+                  ><br />
+                  <span class="sep-list"> 24 PROJECTS</span>
+                </ul>
+              </div>
+              <div class="box2" data-aos="fade-up" data-aos-duration="2000">
+                <div class="network">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <ul>
+                  <li class="sep">Development</li>
+                  <span
+                    >I build website go live with Framer, Webflow or
+                    WordPress</span
+                  ><br />
+                  <span class="sep-list"> 126 PROJECTS </span>
+                </ul>
+              </div>
+              <div class="box3" data-aos="fade-up" data-aos-duration="3000">
+                <div class="network">
+                  <i class="fa-solid fa-network-wired"></i>
+                </div>
+                <ul>
+                  <li class="sep">SEO/Marketing</li>
+                  <span
+                    >Increase the traffic for your website with SEO optimized </span
+                  ><br />
+                  <span class="sep-list">8 PROJECTS </span>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills Section -->
+          <div class="skills">
+            <i
+              class="fa-solid fa-shapes"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              >&nbsp;Services</i
+            >
+            <p class="skills-info" data-aos="fade-up" data-aos-duration="2000">
+              My &nbsp;<span style="color: var(--primary_color)"
+                >Advantages</span
+              >
+            </p>
+            <div class="skill-section">
+              <div class="skill" data-aos="fade-right" data-aos-duration="1000">
+                <div class="skill-data">
+                  <img src="./Skills/figma.png" alt="" />
+                  <h4>92%</h4>
+                </div>
+                <p>Figma</p>
+              </div>
+              <div class="skill" data-aos="fade-down " data-aos-duration="1000">
+                <div class="skill-data">
+                  <img src="./Skills/framer.png" alt="" />
+                  <h4>85%</h4>
+                </div>
+                <p>Framer</p>
+              </div>
+              <div class="skill" data-aos="fade-up " data-aos-duration="1000">
+                <div class="skill-data">
+                  <img src="./Skills/webflow.png" alt="" />
+                  <h4>80%</h4>
+                </div>
+                <p>Webflow</p>
+              </div>
+              <div class="skill" data-aos="fade-left" data-aos-duration="1000">
+                <div class="skill-data">
+                  <img src="./Skills/react.png" alt="" />
+                  <h4>90%</h4>
+                </div>
+                <p>React</p>
+              </div>
+            </div>
+            <div class="skill-section">
+              <div class="skill" data-aos="fade-right" data-aos-duration="1000">
+                <div class="skill-data">
+                  <img src="./Skills/wordpress.png" alt="" />
+                  <h4>86%</h4>
+                </div>
+                <p>wordpress</p>
+              </div>
+              <div class="skill" data-aos="fade-up" data-aos-duration="1000">
+                <div class="skill-data">
+                  <img src="./Skills/laravel.png" alt="" />
+                  <h4>70%</h4>
+                </div>
+                <p>laravel</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio section -->
+          <div class="portflio">
+            <i
+              class="fa-solid fa-grip-vertical"
+              data-aos="fade-up"
+              data-aos-duration="2500"
+              >&nbsp;Portfolio</i
+            >
+            <p class="skills-info" data-aos="fade-up" data-aos-duration="2000">
+              Featured &nbsp;<span style="color: var(--primary_color)"
+                >Projects</span
+              >
+            </p>
+            <div class="pf-data" data-aos="fade-up" data-aos-duration="1400">
+              <img src="./porfolio/portfolio1.jpg" alt="" width="750px" />
+              <div class="pf-btn">
+                <button>Figma</button>
+                <button>Framer</button>
+                <button>WordPress</button>
+              </div>
+              <p>Bureau - Architecture Studio Website</p>
+            </div>
+
+            <div
+              class="midle-pf"
+              data-aos="fade-right"
+              data-aos-duration="1500">
+              <div class="midle-data">
+                <div class="pf-data1">
+                  <img
+                    src="./porfolio/portfolio2.jpg"
+                    alt=""
+                    width="350px"
+                    height="300px" />
+                  <div class="midle-btn">
+                    <button>WordPress</button>
+                    <button>laravel/PHP</button>
+                  </div>
+                  <p>Moonex WordPress Theme</p>
+                </div>
+              </div>
+              <div
+                class="midle-data1"
+                data-aos="fade-left"
+                data-aos-duration="1500">
+                <div class="pf-data2">
+                  <img
+                    src="./porfolio/portfolio3.jpg"
+                    alt=""
+                    width="350px"
+                    height="300px" />
+                  <div class="midle-btn1">
+                    <button>Figma</button>
+                    <button>Webflow</button>
+                  </div>
+                  <p>Taskly Dashboard</p>
+                </div>
+              </div>
+            </div>
+            <div class="last-data" data-aos="fade-up" data-aos-duration="1500">
+              <img src="./porfolio/portfolio4.jpg" alt="" width="750px" />
+              <div class="last-btn">
+                <button>Figma</button>
+                <button>React</button>
+              </div>
+              <p>Hinterland - Real Estate Site Redesign</p>
+            </div>
+            <div class="last-data1" data-aos="fade-up" data-aos-duration="1500">
+              <img src="./porfolio/portfolio5.jpg" alt="" width="750px" />
+              <div class="last-btn1">
+                <button>Figma</button>
+                <button>React</button>
+              </div>
+              <p>Hinterland - Real Estate Site Redesign</p>
+            </div>
+          </div>
+
+          <!-- Slider Section -->
+          <div class="testimonial">
+            <i
+              class="fa-solid fa-message"
+              data-aos="fade-up"
+              data-aos-duration="1800"
+              >&nbsp;Testimonial</i
+            >
+            <p
+              class="testimonial-info"
+              data-aos="fade-up"
+              data-aos-duration="1500">
+              Trusted by &nbsp;<span style="color: var(--primary_color)"
+                >Hundered Clients</span
+              >
+            </p>
+          </div>
+          <div class="slider-section">
+            <div class="slider" data-aos="fade-up" data-aos-duration="1500">
+              <div class="slide">
+                <div class="slide-data">
+                  <img
+                    src="./testimonial/testimonial-1.jpg"
+                    alt=""
+                    height="70px"
+                    width="70px" />
+                  <div class="detail">
+                    <ul>
+                      <li>Paublo Dybala</li>
+                      <li
+                        class="designation"
+                        style="font-size: 10px; color: #747171">
+                        CEO of
+                        <span
+                          style="color: var(--primary_color); font-size: 15px"
+                          >IBM Global</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p>
+                  “Drake - A Developer with the creativity, professional and
+                  master of code. Much more than what i'm expect. High quality
+                  product & flexiable price. Recommended!.”
+                </p>
+                <a href="#">Projects</a>
+              </div>
+              <div class="slide">
+                <div class="slide-data">
+                  <img
+                    src="./testimonial/testimonial-2.jpg"
+                    alt=""
+                    height="70px"
+                    width="70px" />
+                  <div class="detail">
+                    <ul>
+                      <li>Christina Morilloa</li>
+                      <li
+                        class="designation"
+                        style="font-size: 10px; color: #747171">
+                        Product Management of
+                        <span
+                          style="color: var(--primary_color); font-size: 15px"
+                          >Invision App Inc</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p>
+                  “Drake was a real pleasure to work with and we look forward to
+                  working with him again. He's definitely the kind of designer
+                  that you can trust with any project from A-Z.”
+                </p>
+                <a href="#">Projects</a>
+              </div>
+              <div class="slide">
+                <div class="slide-data">
+                  <img
+                    src="./testimonial/testimonial-3.jpg"
+                    alt=""
+                    height="70px"
+                    width="70px" />
+                  <div class="detail">
+                    <ul>
+                      <li>Phil Foden</li>
+                      <li
+                        class="designation"
+                        style="font-size: 10px; color: #747171">
+                        Director of
+                        <span
+                          style="color: var(--primary_color); font-size: 15px"
+                          >Envato LLC</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p>
+                  “Extremely profressional and fast service!. Drake is a master
+                  of code and he also very creative. We done 3 projects with him
+                  and certain will continue.”
+                </p>
+                <a href="#">Projects</a>
+              </div>
+            </div>
+            <div class="slider-btn">
+              <button onclick="goPrev()"><</button>
+              <span id="slide-btn-span">1 </span>
+              <span id="slidebtn">/ 3</span
+              ><button onclick="goNext()">></button>
+            </div>
+          </div>
+
+          <!-- Clients Section -->
+
+          <div class="client-section">
+            <p data-aos="fade-up">WORK WITH 60+ BRANDS WORLDWIDE</p>
+            <div class="client-images">
+              <img
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                src="./clinet/client-1.png"
+                alt="" />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                src="./clinet/client-2.png"
+                alt="" />
+              <img
+                data-aos="fade-down"
+                data-aos-duration="500"
+                src="./clinet/client-3.png"
+                alt="" />
+              <img
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                src="./clinet/client-4.png"
+                alt="" />
+              <img
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                src="./clinet/client-5.png"
+                alt="" />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                src="./clinet/client-6.png"
+                alt="" />
+              <img
+                data-aos="zoom-out-down"
+                data-aos-duration="500"
+                src="./clinet/client-7.png"
+                alt="" />
+              <img
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                src="./clinet/client-8.png"
+                alt="" />
+            </div>
+          </div>
+
+          <!-- Pricing Section -->
+
+          <div class="price-section">
+            <div class="price-icon">
+              <i data-aos="fade-up" data-aos-duration="1000">$ &nbsp;PRICING</i>
+              <p
+                class="skills-info"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                My &nbsp;<span style="color: var(--primary_color)"
+                  >Pricing</span
+                >
+              </p>
+            </div>
+
+            <div class="price-box">
+              <div
+                class="price-box1"
+                data-aos="fade-right"
+                data-aos-duration="1000">
+                <div class="box1-data">
+                  <h6>BASIC</h6>
+                  <p>
+                    Have design ready to build?<br />
+                    or small budget
+                  </p>
+                </div>
+                <div class="price">
+                  <h1>$59</h1>
+                  <span> / Hour</span>
+                </div>
+                <div class="price-list">
+                  <ul>
+                    <li>Need your wireframe</li>
+                    <li>Design with Figma, Framer</li>
+                    <li>
+                      Implement with Webflow, React, WordPress, Laravel/PHP
+                    </li>
+                    <li>Remote/Online</li>
+                    <li>Work in business days, no weekend.</li>
+                    <li>Support 6 months</li>
+                  </ul>
+                </div>
+
+                <div class="price-btn">
+                  <button>PICK THIS PACKAGE</button>
+                </div>
+              </div>
+              <div
+                class="price-box2"
+                data-aos="fade-left"
+                data-aos-duration="1000">
+                <div class="box1-data">
+                  <h6>PREMIUM</h6>
+                  <p>
+                    Have design ready to build?<br />
+                    or small budget
+                  </p>
+                </div>
+                <div class="price">
+                  <h1>$129</h1>
+                  <span> / Hour</span>
+                </div>
+                <div class="price-list1">
+                  <ul>
+                    <li>Don't need wireframe or anything</li>
+                    <li>Design with Figma, Framer from scratch</li>
+                    <li>
+                      Implement with Webflow, React, WordPress, Laravel/PHP
+                    </li>
+                    <li>Remote/Online</li>
+                    <li>Work with both weekend</li>
+                    <li>Support 12 months</li>
+                    <li>Your project alway be priority</li>
+                    <li>Customer care gifts</li>
+                  </ul>
+                </div>
+
+                <div class="price-btn">
+                  <button>PICK THIS PACKAGE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Section -->
+
+          <section class="contact-section">
+            <p data-aos="fade-up" data-aos-duration="1000">
+              Don't find any package match with your plan! <br />
+              Want to setup a new tailor-made package for only you?.
+              <a href="#">Contact Us</a>
+            </p>
+
+            <div class="contact-page">
+              <i
+                class="fa-solid fa-envelope"
+                data-aos="fade-up"
+                data-aos-duration="1000">
+                &nbsp;CONTACT</i
+              >
+            </div>
+            <div class="contact-info">
+              <h6 data-aos="fade-up" data-aos-duration="1000">
+                Let's Work
+                <span style="color: var(--primary_color)">Together!</span>
+              </h6>
+            </div>
+            <p
+              style="font-size: 20px; letter-spacing: 0.5px"
+              data-aos="fade-up"
+              data-aos-duration="1000">
+              hello@drake.design
+            </p>
+            <p class="send-msg"></p>
+
+            <div class="contact-form">
+              <form action="" data-aos="fade-up" data-aos-duration="1000">
+                <div class="con-row1">
+                  <div>
+                    <p for="name">Full Name</p>
+                    <input
+                      type="text"
+                      class="name required"
+                      placeholder="Enter Your Name "
+                      required />
+                  </div>
+                  <div>
+                    <p for="email">EMAIL</p>
+                    <input
+                      type="email"
+                      class="email required"
+                      placeholder="Enter Your Email"
+                      required />
+                  </div>
+                </div>
+                <div class="con-row1">
+                  <div>
+                    <p>
+                      PHONE
+                      <span style="font-size: 15px; color: #747171">
+                        (optional)</span
+                      >
+                    </p>
+                    <input
+                      type="number"
+                      class="number required"
+                      required
+                      placeholder="Enter Your Phone Numer " />
+                  </div>
+                  <div>
+                    <p>Subject</p>
+                    <select name="Subject" id="" class="required">
+                      <option value="value">Subject 1</option>
+                      <option value="value">Subject 2</option>
+                      <option value="value">Subject 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="budget">
+                  <p>
+                    Your Budget
+                    <span style="font-size: 15px; color: #747171">
+                      (optional)</span
+                    >
+                  </p>
+                  <input
+                    type="number"
+                    placeholder="Enter Your budget"
+                    style="width: 100%" />
+                </div>
+                <div class="form-msg">
+                  <p>Message</p>
+                  <textarea name="message" id=""> </textarea>
+                </div>
+                <div class="form-btn">
+                  <button>SEND MESSAGE</button>
+                </div>
+              </form>
+            </div>
+          </section>
+          <!-- Nav Section -->
+        </div>
+        <div class="toggle">
+          <a href="#" onclick="toggleDisplay()" class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+        </div>
+
+        <div class="nav">
+          <nav class="tooltip">
+            <a href="#"
+              ><i class="fa-solid fa-house-user active"
+                ><span class="tooltip-text">Home</span></i
+              ></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-user"
+                ><span class="tooltip-about">About</span></i
+              ></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-briefcase">
+                <span class="tooltip-resume">Resume</span>
+              </i></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-square-poll-horizontal">
+                <span class="tooltip-service">Services</span>
+              </i></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-shapes">
+                <span class="tooltip-skills">Skills</span>
+              </i></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-grip-vertical">
+                <span class="tooltip-portfolio">Portfolio</span>
+              </i></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-message">
+                <span class="tooltip-testimonial">Testimonial</span>
+              </i></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-envelope">
+                <span class="tooltip-contact">Contact</span>
+              </i></a
+            >
+          </nav>
+        </div>
+        <nav class="nav2" id="navbar2">
+          <h6>Menu</h6>
+          <div class="cross-icon" onclick="hideToggle()">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <ul class="sec-navbar">
+            <a href="#"
+              ><i class="fa-solid fa-house-user active"
+                >&nbsp;<span style="color: #fff">Home</span></i
+              ></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-user">&nbsp;<span>About</span></i></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-briefcase"
+                >&nbsp;<span>Resume</span>
+              </i></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-square-poll-horizontal"
+                >&nbsp;<span>Services</span>
+              </i></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-shapes">&nbsp;<span>Skills</span> </i></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-grip-vertical"
+                >&nbsp;<span>Portfolio</span>
+              </i></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-message"
+                >&nbsp;<span>Testimonial</span>
+              </i></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-envelope"
+                >&nbsp;<span>Contact</span>
+              </i></a
+            >
+          </ul>
+
+          <div class="social">
+            <span>Social</span>
+            <ul>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+
+              <li>
+                <a href=""><i class="fa-brands fa-chrome"></i></a>
+              </li>
+              <li>
+                <a href=""> <i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="portfolio.js"></script>
+  </body>
+</html>
