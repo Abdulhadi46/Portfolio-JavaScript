@@ -23,6 +23,9 @@
 
 /* Media Quries */
 @media screen and (max-width: 1120px) {
+  .loader {
+    width: 1120px;
+  }
   .container {
     flex-direction: column;
   }
@@ -71,6 +74,9 @@
   }
 }
 @media screen and (max-width: 1026px) {
+  .loader {
+    width: 1026px;
+  }
   .sidebar-text {
     margin-right: 20px;
     margin-top: 10px;
@@ -97,6 +103,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .loader {
+    width: 600px;
+  }
   .sidebar {
     overflow: visible;
     height: 640px;
@@ -122,6 +131,9 @@
   }
 }
 @media screen and (max-width: 680px) {
+  .loader {
+    width: 680px;
+  }
   .main .info {
     font-size: 40px;
   }
@@ -148,6 +160,9 @@
 }
 
 @media screen and (max-width: 400px) {
+  .loader {
+    width: 400px;
+  }
   .nav2 {
     width: auto;
   }
@@ -169,7 +184,7 @@
     font-size: 40px;
   }
   .loader {
-    width: 500px;
+    width: 430px;
   }
 }
 @media screen and (max-width: 816px) {
@@ -182,6 +197,9 @@
 }
 
 @media screen and (max-width: 440px) {
+  .loader {
+    width: 440px;
+  }
   .toggle i {
     top: 4px;
     right: 0;
