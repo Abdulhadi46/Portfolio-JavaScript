@@ -169,7 +169,7 @@
     font-size: 40px;
   }
   .loader {
-    width: 100%;
+    width: 500px;
   }
 }
 @media screen and (max-width: 816px) {
@@ -189,6 +189,9 @@
   }
 }
 @media screen and (max-width: 360px) {
+  .loader {
+    width: 360px;
+  }
   .toggle i {
     top: 4px;
     right: 0;
