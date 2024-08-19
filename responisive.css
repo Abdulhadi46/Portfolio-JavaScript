@@ -33,7 +33,7 @@
     position: static;
     top: 0;
     bottom: 50px;
-    width: 80%;
+    width: 100%;
     margin: auto;
     height: 740px;
   }
@@ -92,7 +92,7 @@
     font-size: 60px;
   }
   .toggle i {
-    right: 100px;
+    right: 30px;
   }
 }
 
@@ -191,9 +191,42 @@
     right: 0;
     border: none;
   }
+  .configration {
+    width: 50%;
+    padding: 10px;
+  }
+  .configration h1 {
+    font-size: 18px;
+  }
+  .color {
+    flex-wrap: wrap;
+  }
+  .con-cross i {
+    border: none;
+  }
+  .backgrounds {
+    grid-template-columns: repeat(1, 4fr);
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .configration {
+    width: 50%;
+    padding: 10px;
+  }
+  .configration h1 {
+    font-size: 18px;
+  }
+  .color {
+    flex-wrap: wrap;
+  }
+  .con-cross i {
+    border: none;
+    top: 35px;
+  }
+  .backgrounds {
+    grid-template-columns: repeat(1, 4fr);
+  }
   .sidebar {
     width: 100%;
     height: 650px;
