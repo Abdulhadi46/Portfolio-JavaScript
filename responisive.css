@@ -168,6 +168,9 @@
   .main .info {
     font-size: 40px;
   }
+  .loader {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 816px) {
   .sidebar-text {
