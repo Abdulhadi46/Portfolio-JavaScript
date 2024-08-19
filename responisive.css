@@ -148,8 +148,6 @@
 }
 
 @media screen and (max-width: 400px) {
-  .sidebar {
-  }
   .nav2 {
     width: auto;
   }
@@ -181,6 +179,13 @@
 }
 
 @media screen and (max-width: 440px) {
+  .toggle i {
+    top: 4px;
+    right: 0;
+    border: none;
+  }
+}
+@media screen and (max-width: 360px) {
   .toggle i {
     top: 4px;
     right: 0;
