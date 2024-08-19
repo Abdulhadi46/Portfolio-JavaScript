@@ -234,9 +234,10 @@ nav a {
 .cross-icon i:hover {
   border-color: var(--primary_color);
   color: var(--primary_color);
+  cursor: pointer;
 }
 .nav2 {
-  width: 80%;
+  width: 25%;
   transition: 1s ease;
   transform: scaleX(50px);
   text-align: start;
@@ -296,13 +297,14 @@ nav a {
 }
 .nav2 {
   position: fixed;
-  left: 0;
-  top: 50px;
+  right: 0;
+  top: 0;
   transition: 0.5s;
   background-color: #0f0f0f;
   display: none;
   transition: 1s;
   height: 100vh;
+  width: 33%;
 }
 .main {
   display: flex;
@@ -1165,6 +1167,12 @@ nav a {
 .form-btn button:hover {
   background-color: black;
   border: 1px solid var(--primary_color);
+  color: var(--primary_color);
+}
+input[type="text"]:focus::placeholder {
+  color: var(--primary_color);
+}
+input[type="email"]:focus::placeholder {
   color: var(--primary_color);
 }
 
