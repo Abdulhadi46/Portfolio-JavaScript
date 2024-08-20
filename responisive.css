@@ -23,6 +23,13 @@
 
 /* Media Quries */
 @media screen and (max-width: 1120px) {
+  .ham-menu {
+    display: block;
+    top: 0px;
+  }
+  .nav2 {
+    top: 45px;
+  }
   .loader {
     width: 1120px;
   }
@@ -207,6 +214,16 @@
   }
 }
 @media screen and (max-width: 360px) {
+  .ham-menu {
+    top: 7px;
+    right: 10px;
+  }
+  .nav2 {
+    top: 60px;
+  }
+  .sec-navbar a {
+    font-size: 10px;
+  }
   .loader {
     width: 360px;
   }

@@ -1,12 +1,12 @@
 /* Second Nav Bar Hide Display Function */
 
-let y = document.querySelector(".nav2");
-function toggleDisplay() {
-  y.style.display = "block";
-}
-function hideToggle() {
-  y.style.display = "none";
-}
+// let y = document.querySelector(".nav2");
+// function toggleDisplay() {
+//   y.style.display = "block";
+// }
+// function hideToggle() {
+//   y.style.display = "none";
+// }
 
 /* Slider Functions */
 
@@ -147,3 +147,12 @@ let gearDisplay = document.querySelector(".configration");
 function configDisplay() {
   gearDisplay.style.display = "block";
 }
+
+const hamMenu = document.querySelector(".ham-menu");
+
+const offScreenMenu = document.querySelector(".nav2");
+
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+});

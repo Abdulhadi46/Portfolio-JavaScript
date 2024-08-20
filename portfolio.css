@@ -236,16 +236,70 @@ nav a {
   color: var(--primary_color);
   cursor: pointer;
 }
+.ham-menu {
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  position: relative;
+  top: 30px;
+  right: 60px;
+  cursor: pointer;
+  display: none;
+}
+.ham-menu span {
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 .nav2 {
-  width: 25%;
-  transition: 1s ease;
-  transform: scaleX(50px);
-  text-align: start;
+  background-color: #1f1f1f;
+  height: 100vh;
+  width: 30%;
+  max-width: 450px;
+  position: fixed;
+  top: 80px;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: 0.3s ease;
+  z-index: 1;
 }
-.sec-navbar {
-  padding: 20px;
-  text-align: start;
+.nav2.active {
+  right: 0;
 }
+
 .sec-navbar a {
   display: flex;
   flex-direction: column;
@@ -254,7 +308,7 @@ nav a {
   list-style-type: none;
   text-decoration: none;
   transition: 0.2s ease;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .sec-navbar a {
   letter-spacing: 3px;
@@ -274,7 +328,7 @@ nav a {
 .nav2 h6 {
   color: #747171;
   font-size: 20px;
-  padding: 10px 25px;
+  /* padding: 10px 25px; */
 }
 .social ul {
   display: flex;
@@ -284,9 +338,9 @@ nav a {
 .social a {
   transition: 0.4s ease;
 }
-.social li {
+/* .social li {
   padding: 10px 5px;
-}
+} */
 .social a:hover {
   color: var(--primary_color);
 }
@@ -295,7 +349,7 @@ nav a {
   color: #747171;
   padding: 10px 25px;
 }
-.nav2 {
+/* .nav2 {
   position: fixed;
   right: 0;
   top: 0;
@@ -305,7 +359,7 @@ nav a {
   transition: 1s;
   height: 100vh;
   width: 33%;
-}
+} */
 .main {
   display: flex;
   flex-direction: column;
